@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        div.stars {overflow: hidden;}
+        div.star {float: left; background: url('star0.png');width: 75px; height: 78px}
+        div.star:hover { background: url('star1.png'); width: 76px; height: 78px;}
+        div.stars:hover div.star {background: url('star1.png'); cursor: pointer;}
+        div.star:hover ~ div.star {background:url('star0.png')}
+
+
+    </style>
+        
+        <div class='stars'>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+</body>
+</html>
