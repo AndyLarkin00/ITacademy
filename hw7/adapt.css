@@ -1,9 +1,10 @@
 @media all  and (max-width:560px){
+    
     .menu {
         
         width: 100%;
         background-color: #f0e68c;
-        padding-bottom: 20px;     
+        padding-bottom: 0px;     
     }
     .total-content {
        
@@ -16,18 +17,19 @@
     
     .content {
         width: 100%;
-        margin-left: 2px;
+        margin-left: 0px;
         /* background:
                 url('ball.jpeg') repeat-y right top; */
     }
     .content img{
+        width: 100%;
         display: block;
         float: none; 
         margin-left: auto;
-         margin-right: auto;
+        margin-right: auto;
     }
     .menu ul{
-        margin-left: 5px; 
+        margin-left: 0px; 
         padding: 0px
     }
     .col2 li{
@@ -51,8 +53,8 @@
     .content{
         font-size: 18px;
         margin-left: 330px;
-        background:
-            url('ball.jpeg') right top / 10% auto repeat-y ;
+        background: url('ball.gif') repeat-y right top"
+        
     }
     .content img{
         width: 300px;
@@ -60,5 +62,6 @@
     .total-content{
         background-image: url('ine330.png'); 
         background-repeat: repeat-y;
+        
     }
 }

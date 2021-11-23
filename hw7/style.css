@@ -20,9 +20,9 @@ padding: 0;}
     
 }
 .content{
+    height: 100%;
     margin-left: 200px; 
-    background:
-            url('ball.jpeg') repeat-y right top;
+    background: url('ball.jpeg') repeat-y right top;
 }
 .footer{
     clear: both; 
@@ -47,6 +47,7 @@ padding: 0;}
 }
 .content p{
     margin-left: 10px;
+    
 }
 
 .clearfix::after{
@@ -54,7 +55,7 @@ padding: 0;}
     display: block;
     clear:both;
 }
-
+html { overflow-x: hidden; }
 
 
 
