@@ -1,10 +1,11 @@
-@media all  and (max-width:560px){
+@media all  and (max-width:500px){
     
     .menu {
         
         width: 100%;
         background-color: #f0e68c;
-        padding-bottom: 0px;     
+        padding-bottom: 0px; 
+        
     }
     .total-content {
        
@@ -18,7 +19,7 @@
     .content {
         width: 100%;
         margin-left: 0px;
-        /* background:
+         /*background:
                 url('ball.jpeg') repeat-y right top; */
     }
     .content img{
@@ -29,16 +30,18 @@
         margin-right: auto;
     }
     .menu ul{
+        
         margin-left: 0px; 
         padding: 0px
     }
     .col2 li{
-    display: block;
+    display: inline;
     float:left;
-    width: 50%;
+    
     list-style-type: none;
     }
     .col2{
+        display: inline;
         margin: 0;
         padding: 0;
     }

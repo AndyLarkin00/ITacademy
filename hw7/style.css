@@ -11,12 +11,14 @@ padding: 0;}
     font-weight: bold;
 }
 .total-content{
+    width: 100%;
     background-image: url('ine.png'); 
     background-repeat: repeat-y;
 }
 .menu{
     width: 200px; 
     float: left;
+    
     
 }
 .content{
@@ -36,6 +38,7 @@ padding: 0;}
     padding: 15px;
 }
 .menu ul{
+    
     margin-left: 30px; 
     padding: 15px
 }
@@ -55,7 +58,9 @@ padding: 0;}
     display: block;
     clear:both;
 }
-html { overflow-x: hidden; }
+.body{
+    width: 97%;
+}
 
 
 
