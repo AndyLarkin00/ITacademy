@@ -8,8 +8,8 @@
         
     }
     .total-content {
-       
-        background: url('ball.jpeg') repeat-y right top;
+        background: none;
+       /*  background: url('ball.jpeg') repeat-y right top; */
     }
     .total-content h2{
         text-align: center;
@@ -18,7 +18,7 @@
     
     .content {
         width: 100%;
-        margin-left: 0px;
+        margin-left: -20px;
          /*background:
                 url('ball.jpeg') repeat-y right top; */
     }
@@ -26,8 +26,10 @@
         width: 100%;
         display: block;
         float: none; 
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
+    }
+    .content p {
+        margin-left: 36px;
     }
     .menu ul{
         
