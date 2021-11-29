@@ -14,7 +14,9 @@
     .total-content h2{
         text-align: center;
     }
-        
+    .header{
+        display: none;
+    }   
     
     .content {
         width: 100%;
@@ -26,24 +28,25 @@
         width: 100%;
         display: block;
         float: none; 
-        margin: 0 auto;
+        margin: 0;
     }
     .content p {
-        margin-left: 36px;
+        margin-left: 30px;
     }
     .menu ul{
-        
+        width: 100%;
         margin-left: 0px; 
         padding: 0px
     }
     .col2 li{
-    display: inline;
+    display: block;
     float:left;
-    
+    width: 30%;
     list-style-type: none;
     }
     .col2{
-        display: inline;
+        width: 100%;
+        display:block;
         margin: 0;
         padding: 0;
     }
