@@ -1,0 +1,75 @@
+@media all  and (max-width:500px){
+    
+    .menu {
+        
+        width: 100%;
+        background-color: #f0e68c;
+        padding-bottom: 0px; 
+        
+    }
+    .total-content {
+        background: none;
+       /*  background: url('ball.jpeg') repeat-y right top; */
+    }
+    .total-content h2{
+        text-align: center;
+    }
+    .header{
+        display: none;
+    }   
+    
+    .content {
+        width: 100%;
+        margin-left: -20px;
+         /*background:
+                url('ball.jpeg') repeat-y right top; */
+    }
+    .content img{
+        width: 100%;
+        display: block;
+        float: none; 
+        margin: 0;
+    }
+    .content p {
+        margin-left: 30px;
+    }
+    .menu ul{
+        width: 100%;
+        margin-left: 0px; 
+        padding: 0px
+    }
+    .col2 li{
+    display: block;
+    float:left;
+    width: 30%;
+    list-style-type: none;
+    }
+    .col2{
+        width: 100%;
+        display:block;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+@media all  and (min-width:992px){
+    .menu{
+        width: 340px; 
+        font-size: 20px;
+    }
+    .content{
+        font-size: 18px;
+        margin-left: 330px;
+        background: url('ball.gif') repeat-y right top"
+        
+    }
+    .content img{
+        width: 300px;
+    }
+    .total-content{
+        background-image: url('ine330.png'); 
+        background-repeat: repeat-y;
+        
+    }
+}
