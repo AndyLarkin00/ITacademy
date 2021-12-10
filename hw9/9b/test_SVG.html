@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/all.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test_SVG</title>
     <style>
         
-        i{
-            font-size: 40px;
-        }
-        i:hover {
-          color: red;  
-          font-size: 70px;
-          
+        .sun:hover {
+            fill: yellow;
         }
     </style>
 </head>
 <body>
+    <h2>Наведите курсор мыши на солнце:</h2>
     
-  <i class="fas fa-car"></i>
+        
+        <svg class="full" style="position: relative;" width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+            
+             <line stroke="#000" id="svg_19" y2="90" x2="210" y1="221" x1="301" fill="none"/>
+             <line stroke="#000" id="svg_18" y2="148" x2="102" y1="258" x1="248" fill="none"/>
+             <line stroke="#000" id="svg_26" y2="317" x2="805" y1="332" x1="0" fill="none"/>
+             <path class ="sun" id="svg_13" d="m395.00001,326.5c-85.08287,0 -159.99999,18.00276 -159.99999,-21.5c0,-39.50276 78.91712,-78.5 163.99999,-78.5c85.08287,0 157.99999,34.99724 157.99999,74.5c0,39.50276 -76.91712,25.5 -161.99999,25.5z" opacity="undefined" stroke="#000" fill="#fff"/>
+             <line id="svg_16" y2="393" x2="391" y1="392" x1="391" stroke="#000" fill="none"/>
+             <line stroke="#000" id="svg_20" y2="54" x2="317" y1="214" x1="349" fill="none"/>
+             <line id="svg_21" y2="29" x2="422" y1="214" x1="421" stroke="#000" fill="none"/>
+             <line stroke="#000" id="svg_24" y2="224" x2="694" y1="275" x1="559" fill="none"/>
+             <line stroke="#000" id="svg_23" y2="130" x2="664" y1="250" x1="543" fill="none"/>
+             <line stroke="#000" id="svg_22" y2="69" x2="555" y1="215" x1="485" fill="none"/>
+            
+        </svg>
+    
+
 </body>
 </html>
