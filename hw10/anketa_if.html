@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anketa_if</title>
+</head>
+<body>
+    
+<script>
+
+    var surname = prompt('Ваша фамилия:');
+    var name = prompt('Ваше имя:');
+    var lastname = prompt('Ваше отчество:');
+    var ageStr=prompt('Введите ваш возраст:');
+    var age=parseInt(ageStr);
+    var gender=confirm('Ваш пол (М или Ж): ')
+
+        var genderM
+        var pensiaM
+        var pensiaAge
+            if (gender) {
+                    genderM="Мужской" 
+                    pensiaAge=60           
+    }
+                else{
+                    genderM="Женский"
+                    pensiaAge=55  
+    }
+            if (age>=pensiaAge) {
+                                pensiaM="Да"
+       
+    }
+                else{
+                    pensiaM="Нет"
+    }
+
+            alert(
+                "Ваше ФИО: "+surname+" "+name+" "+lastname+"\n"+"Ваш возраст в годах: "+age+"\n"+"Ваш возраст в днях: "+(age*365)+"\n"+"Через 5 лет вам будет: "+(age+5)+"\n"+"Ваш пол: "+genderM+"\n"+"Вы на пенсии: "+pensiaM+"\n"
+            )
+    
+</script>
+
+</body>
+</html> 

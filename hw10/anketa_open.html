@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anketa_open</title>
+</head>
+<body>
+    
+<script>
+
+    var surname = prompt('Ваша фамилия:');
+    var name = prompt('Ваше имя:');
+    var lastname = prompt('Ваше отчество:');
+    var ageStr=prompt('Введите ваш возраст:');
+    var age=parseInt(ageStr);
+    var gender=confirm('Ваш пол (М или Ж): ')
+
+        var genderM=gender?"Мужской":"Женский";
+        var pensiaAge=gender?60:55;
+        var pensiaM=(age>=pensiaAge)?"да":"нет";
+
+            alert(
+                "Ваше ФИО: "+surname+" "+name+" "+lastname+"\n"+"Ваш возраст в годах: "+age+"\n"+"Ваш возраст в днях: "+(age*365)+"\n"+"Через 5 лет вам будет: "+(age+5)+"\n"+"Ваш пол: "+genderM+"\n"+"Вы на пенсии: "+pensiaM+"\n"
+            )
+    
+</script>
+
+</body>
+</html> 
