@@ -22,40 +22,55 @@
 <script>
 
 var infoCountry={ };
-
-
 let countryName ;
 let capitalName ;
 let countryNameCheck ;
 let delCountry;
 
-function putInfoCountry(){   
+function addCountry(countryName,capitalName) {
+    infoCountry[countryName]=capitalName;
+}
+
+ function deleteCountry(countryName) {
+    delete infoCountry[countryName];
+}
+
+function getCountryInfo(countryName) {
+    if ( countryName in infoCountry ) {
+        console.log('страна: ' + countryName + ' столица: ' + infoCountry[countryName]); 
+        return 'страна: ' + countryName + ' столица: ' + infoCountry[countryName] ;
+    } else {
+        console.log('нет информации о стране ' + countryName + '!') ;
+        return 'нет информации о стране ' + countryName + '!';
+    }    
+}
+
+function listCountrys() {
+    var res="";
+    for ( var CN in infoCountry )
+        res+='\n'+getCountryInfo(CN);
+} 
+
+function putInfoCountry(){  
    countryName=prompt('Введите название страны?: ');
-   capitalName=prompt('Введите название столицы?: ');  
-   infoCountry[countryName]=capitalName; 
+   capitalName=prompt('Введите название столицы?: '); 
+   addCountry(countryName,capitalName) 
 }
   
 function getInfoCountry(){
-        countryNameCheck=prompt('Проверим, есть ли такая страна?: ');
-   if   (countryNameCheck==countryName)
-        alert ('страна: ' + countryName + ' столица: ' + infoCountry[countryName] );
-   else
-        alert( 'нет информации о стране ' + countryName + '!' );
+    countryNameCheck=prompt('Проверим, есть ли такая страна?: ');
+    getCountryInfo(countryNameCheck)
 }   
    
 function fullInfoCountry(){
-   for ( var CN in infoCountry )
-        console.log( 'страна: ' + CN + ' столица: ' + infoCountry[CN] );
+    listCountrys()
 }
+
 function deleteInfoCountry(){
     delCountry = prompt('Какую страну удалить?: ');
-    if   (delCountry==countryName)
-        delete infoCountry[delCountry];
-    else
-        alert( 'нет информации о стране в хэше !' );
+    deleteCountry(delCountry)
 }
 
 </script>
-
 </body>
 </html>
