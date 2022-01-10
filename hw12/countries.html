@@ -37,10 +37,10 @@ function addCountry(countryName,capitalName) {
 
 function getCountryInfo(countryName) {
     if ( countryName in infoCountry ) {
-        console.log('страна: ' + countryName + ' столица: ' + infoCountry[countryName]); 
+        /* console.log('страна: ' + countryName + ' столица: ' + infoCountry[countryName]);  */
         return 'страна: ' + countryName + ' столица: ' + infoCountry[countryName] ;
     } else {
-        console.log('нет информации о стране ' + countryName + '!') ;
+        /* console.log('нет информации о стране ' + countryName + '!') ; */
         return 'нет информации о стране ' + countryName + '!';
     }    
 }
@@ -49,6 +49,7 @@ function listCountrys() {
     var res="";
     for ( var CN in infoCountry )
         res+='\n'+getCountryInfo(CN);
+        console.log(res)
 } 
 
 function putInfoCountry(){  
@@ -59,7 +60,11 @@ function putInfoCountry(){
   
 function getInfoCountry(){
     countryNameCheck=prompt('Проверим, есть ли такая страна?: ');
-    getCountryInfo(countryNameCheck)
+    if ( countryNameCheck in infoCountry ) {
+        console.log('страна: ' + countryNameCheck + ' столица: ' + infoCountry[countryNameCheck]);  
+    } else {
+        console.log('нет информации о стране ' + countryNameCheck + '!') ; 
+    }    
 }   
    
 function fullInfoCountry(){
