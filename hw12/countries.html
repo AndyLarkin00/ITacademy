@@ -37,10 +37,8 @@ function addCountry(countryName,capitalName) {
 
 function getCountryInfo(countryName) {
     if ( countryName in infoCountry ) {
-        /* console.log('страна: ' + countryName + ' столица: ' + infoCountry[countryName]);  */
         return 'страна: ' + countryName + ' столица: ' + infoCountry[countryName] ;
     } else {
-        /* console.log('нет информации о стране ' + countryName + '!') ; */
         return 'нет информации о стране ' + countryName + '!';
     }    
 }
@@ -49,7 +47,7 @@ function listCountrys() {
     var res="";
     for ( var CN in infoCountry )
         res+='\n'+getCountryInfo(CN);
-        console.log(res)
+        return res
 } 
 
 function putInfoCountry(){  
@@ -68,7 +66,7 @@ function getInfoCountry(){
 }   
    
 function fullInfoCountry(){
-    listCountrys()
+    console.log(listCountrys())
 }
 
 function deleteInfoCountry(){
